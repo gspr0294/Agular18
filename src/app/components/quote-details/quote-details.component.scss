@@ -1,0 +1,72 @@
+.policy_details{
+    display: flex;
+    .inforce_details{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+        .inforce-heading{
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+        .policy-data{
+            display: flex;
+            padding: 5px 0;
+            .policy-number,.insured-name{
+                flex: 1;
+            }
+        }
+    }
+    .premium_details{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+        .premium-data{
+            display: flex;
+            padding-bottom: 10px;
+            .premium-name,.premium-value{
+                flex: 1;
+            }
+        }
+    }
+}
+
+.data-grid{
+    display: flex;
+    flex-direction: column;
+    .header-row{
+        display: flex;
+        .header-cell{
+            flex: 1;
+        }
+    }
+    .data-row{
+        display: flex;
+        .data-cell{
+            flex: 1;
+        }
+    }
+
+}
+
+.new-run {
+    padding-left: 10px;
+
+    .newrunquote-btn {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        background-color: #04AA6D;
+        color: #ffffff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: block;
+        margin: 0 0 0 auto;
+    }
+}
+
+
+  
+  

@@ -1,0 +1,73 @@
+<div class="policy_details">
+    @if (inforceDetails) {
+        
+        <div class="inforce_details">
+            <div class="inforce-heading">
+                Inforce Policy
+            </div>
+            <div class="policy-data">
+                <div class="policy-number">
+                    Policy #
+                </div>
+                <div class="insured-name">
+                    Insured Name
+                </div>
+            </div>
+            @for (policyData of inforceDetails; track $index) {
+                <div class="policy-data">
+                    <div class="policy-number">
+                        {{policyData.number}}
+                    </div>
+                    <div class="insured-name">
+                        {{policyData.name}}
+                    </div>
+                </div>  
+            }
+        </div>
+    }
+    <div class="premium_details">
+        @for (premiumData of premiumDetails; track $index) {
+            <div class="premium-data">
+                <div class="premium-name">
+                    {{premiumData.name}}
+                </div>
+                <div class="premium-value">
+                    {{premiumData.value}}
+                </div>
+            </div>  
+        }
+    </div>
+</div>
+<hr>
+@if (columns && data) {
+    <div class="data-grid">
+        <div class="header-row">
+            @for (column of columns; track $index) {
+                <div class="header-cell">
+                    {{ column.header }}
+                  </div>
+            }
+          
+        </div>
+        <div class="body">
+            @for (row of data; track $index) {
+                <div class="data-row">
+                    @for (column of columns; track $index) {
+                        <div class="data-cell">
+                            {{ row[column.field] }}
+                          </div>
+                    }
+                    
+                  </div>
+            }
+          
+        </div>
+      </div>
+      <div class="new-run">
+        <button class="newrunquote-btn" [routerLink]="['/policy']" type="button">Run New Quote</button>
+      </div>
+      
+}
+@if (!inforceDetails) {
+    <app-policy-quote-form></app-policy-quote-form>
+}

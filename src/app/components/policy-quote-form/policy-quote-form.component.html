@@ -1,0 +1,52 @@
+<div class="policy-container">
+    @if (isNewBusiness === "/policy") {
+        <div class="form-heading">
+            New Business
+        </div>
+    }
+    <form [formGroup]="policyForm" (ngSubmit)="onSubmit()">
+        <div class="policy-form">
+            @if (isNewBusiness === "/quote") {
+                <div class="form-heading">
+                    Inforce
+                </div>
+            }
+            <div formArrayName="policies">
+                @for(policy of policies.controls; track policy;let i = $index){
+                    <div class="policy-group">
+                        @if (i === 0) {
+                            <label for="policy{{i}}">Policy #</label>
+                         }@else {
+                            <label for="policy{{i}}">Policy # {{i + 1}}</label>
+                         }
+                        <div class="policy-input">
+                            <input type="text" [formControlName]="i" id="policy{{i}}" />
+                        
+                            @if (isNewBusiness === "/quote") {
+                                @if (i === 0) {
+                                    <button type="button" (click)="addPolicy()" class="add-button">+</button>
+                                }@else {
+                                    <button type="button" (click)="removePolicy(i)" class="remove-button">-</button>
+                                }
+                            }
+                        </div>
+                        
+                         
+                        @if(i === 0 && policy.invalid && (policy.dirty || policy.touched)){
+                            <div class="error">
+                                <small *ngIf="policy.errors?.['required']">policy is required.</small>
+                              </div>
+                        }
+                        
+                      </div>
+                }
+              
+            </div>
+            <div class="policy-btn-data">
+                <button class="runquote-btn" [disabled]="policyForm.invalid" type="submit">Run Quote</button>
+            </div>
+            
+        </div>
+        
+      </form>
+</div>

@@ -1,0 +1,73 @@
+.policy-container {
+
+
+    .form-heading {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        /* Added margin for spacing */
+    }
+
+    .policy-form {
+        display: flex;
+        flex-wrap: wrap;
+
+        /* Allow items to wrap if necessary */
+        .form-heading {
+            padding-right: 20px;
+            margin-top: 28px;
+        }
+
+        .policy-group {
+            padding-right: 10px;
+            flex: 1 1 auto;
+            /* Allow items to grow and shrink based on content */
+
+            label {
+                display: block;
+                padding-bottom: 10px;
+            }
+
+            .policy-input {
+                display: flex;
+
+                input {
+                    width: 100%;
+                    /* Ensure input takes full width of its parent */
+                    padding: 10px;
+                    border: 1px solid #B9B9B9;
+                    border-radius: 10px;
+                    color: #051C31;
+                    font-weight: 600;
+                    box-sizing: border-box;
+                }
+
+                button {
+                    margin-left: 20px;
+                }
+            }
+
+            .error {
+                color: red;
+                font-size: 12px;
+            }
+        }
+
+        .policy-btn-data {
+            padding-left: 10px;
+
+            .runquote-btn {
+                padding: 12px 24px;
+                border: none;
+                border-radius: 5px;
+                background-color: #04AA6D;
+                color: #ffffff;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                display: block;
+                margin: 28px auto 0;
+            }
+        }
+    }
+}
