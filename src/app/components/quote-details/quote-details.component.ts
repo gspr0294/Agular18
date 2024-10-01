@@ -61,4 +61,12 @@ export class QuoteDetailsComponent implements OnInit {
     this.inforceDetails = this.policyQuote?.inforceData;
     this.premiumDetails = this.policyQuote?.premiumData;
   }
+
+  onSubmitQuotes(event: any): void {
+    this.policyQuote = this.policyService.policyQuoteWithData();
+    this.columns = this.policyQuote?.quoteData?.columns;
+    this.data = this.policyQuote?.quoteData?.data;
+    this.inforceDetails = this.policyQuote?.inforceData;
+    this.premiumDetails = this.policyQuote?.premiumData;
+  }
 }

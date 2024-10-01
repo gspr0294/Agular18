@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ReactiveFormsModule, FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 
@@ -16,6 +16,7 @@ export class PolicyQuoteFormComponent implements OnInit {
   maxPolicies: number = 4;  // Define the maximum number of policies
   submittedData: any;
   isNewBusiness!: string;
+  @Output() submitEvent = new EventEmitter<any>();
 
   constructor(private fb: FormBuilder, private router: Router) {
     this.policyForm = this.fb.group({
@@ -50,7 +51,12 @@ export class PolicyQuoteFormComponent implements OnInit {
     if (this.policyForm.valid) {
       this.submittedData = this.policyForm.value;  // Store the submitted data
 
-      this.router.navigate(['/quote']);
+      if (this.router.url == '/quote') {
+        this.submitEvent.emit(this.policyForm.value);
+      }
+      else {
+        this.router.navigate(['/quote']);
+      }
       console.log(this.submittedData);  // Log the form data
     } else {
       console.log('Form is not valid');

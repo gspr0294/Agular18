@@ -11,18 +11,18 @@ export class PolicyQuoteService {
   }
 
   getData() {
-    this.httpService.get('data-endpoint')
-      .subscribe({
-        next: (data) => {
-          console.log(data);
-        },
-        error: (error) => {
-          console.error('Error fetching data:', error);
-        }
-      });
+    // this.httpService.get('data-endpoint')
+    //   .subscribe({
+    //     next: (data) => {
+    //       console.log(data);
+    //     },
+    //     error: (error) => {
+    //       console.error('Error fetching data:', error);
+    //     }
+    //   });
   }
 
-  policyQuote(){
+  policyQuoteWithData(){
     return {
       inforceData:[
         {
@@ -68,6 +68,30 @@ export class PolicyQuoteService {
         { header: 'Name', field: 'name' },
         { header: 'Age', field: 'age' }
       ]
+    }
+    }
+  }
+
+  policyQuote(){
+    return {
+      inforceData:null,
+      premiumData:[
+        {
+          value: "$350",
+          name:"New Premium"
+        },
+        {
+          value: "$230",
+          name:"Old Premium"
+        },
+        {
+          value: "$XXXX",
+          name:"Replacement Factor"
+        }
+      ],
+      quoteData:{
+        data : null,
+        columns : null
     }
     }
   }

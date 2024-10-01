@@ -69,5 +69,5 @@
       
 }
 @if (!inforceDetails) {
-    <app-policy-quote-form></app-policy-quote-form>
+    <app-policy-quote-form (submitEvent)="onSubmitQuotes($event)"></app-policy-quote-form>
 }
