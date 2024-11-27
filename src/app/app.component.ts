@@ -14,36 +14,35 @@ export class AppComponent {
   constructor(){
 
   }
-  Task Name: Improve Communication using the Meeting Plan
+  Task Name: Resolve Interpersonal Conflicts for the Identified Situation
 
-Intent of the Meeting:
+Task Description: In this task, I will identify and summarize three interpersonal conflicts I have encountered recently in a business setting. I will also describe the strategies I have used or will use to resolve these conflicts effectively.
 
-The intent of this upcoming meeting is to discuss the progress of the current project, address any concerns from the client, and align on next steps for the successful delivery of services.
+1. Identifying Interpersonal Conflicts
+Conflict 1: Miscommunication in Project Management
 
-Client/Stakeholder Details:
+Overview: In my role as a project coordinator, I faced a conflict where team members misunderstood project deadlines. One team member, in particular, missed several deadlines, causing delays in the project timeline. The issue stemmed from unclear communication regarding who was responsible for specific tasks.
+Problem: The lack of clarity in task assignment and communication led to confusion and frustration among team members, impacting the overall progress.
+Conflict 2: Conflict between Sales and Marketing Teams
 
-Client Name: Global Manufacturing Company
-Relationship Type: Strategic Partnership
-Designation: Senior Procurement Manager
-Buying Center: Procurement Department
-Business Function/Process: Supply Chain Optimization & Process Improvement
-Meeting Purpose:
+Overview: There was a conflict between the sales and marketing teams regarding the promotion strategy for a new product. The marketing team wanted to pursue a digital-first approach, while the sales team preferred in-person demonstrations and traditional methods.
+Problem: Both teams had differing views on the approach, causing tension and a lack of collaboration between them.
+Conflict 3: Disagreement Over Resource Allocation
 
-The purpose of this meeting is to review the ongoing supply chain optimization efforts, discuss key performance metrics, and identify any potential roadblocks that may impact the timely delivery of services. This meeting will also ensure both parties are aligned on future project milestones and expectations.
+Overview: A disagreement occurred between two department managers over resource allocation for a key project. One manager felt that their department needed more resources, while the other believed the resources should be divided differently to ensure fairness.
+Problem: The disagreement resulted in delays in decision-making, affecting project timelines and team morale.
+2. Approach/Strategy to Resolve Conflicts
+Resolution for Conflict 1: Miscommunication in Project Management
 
-Meeting Agenda:
+Approach: I organized a team meeting to clarify task assignments and set clear deadlines. I implemented a project management tool for real-time tracking and updates. Regular check-ins were scheduled to ensure transparency and that team members were aligned with the project goals.
+Outcome: Improved communication and accountability led to fewer missed deadlines and a smoother workflow.
+Resolution for Conflict 2: Sales and Marketing Teams Conflict
 
-Introduction and Welcome (5 minutes)
-Review of Current Project Status (15 minutes)
-Discussion of Key Metrics and Performance Indicators (10 minutes)
-Address Client Concerns and Feedback (10 minutes)
-Identify and Discuss Roadblocks/Challenges (10 minutes)
-Next Steps and Action Items (10 minutes)
-Q&A and Closing Remarks (10 minutes)
-Key Questions to Ask the Client:
+Approach: To resolve this, I facilitated a joint meeting between both teams to understand their concerns. We conducted a brainstorming session to find a hybrid solution that combined both strategies (digital campaigns with in-person demos).
+Outcome: A unified plan was created, which allowed both teams to collaborate effectively, boosting morale and the product's visibility in the market.
+Resolution for Conflict 3: Disagreement Over Resource Allocation
 
-Are there any specific areas of the project where you feel additional focus is needed?
-Do you foresee any potential challenges or changes in priorities that could affect the timeline?
-What improvements or adjustments would you suggest to streamline the process and ensure timely delivery?
-Are there any updates or new requirements we should incorporate into the upcoming phases of the project?
-How can we improve communication and collaboration between our teams moving forward?
+Approach: I proposed a fair and transparent allocation of resources based on project priority and need. We held a meeting where both managers could voice their concerns, and we came to a mutual agreement after analyzing project goals and resource availability.
+Outcome: Resource distribution became clearer, reducing tension between the departments and ensuring timely project completion.
+Conclusion:
+By identifying the conflicts and using a strategic approach, I was able to facilitate better communication, collaboration, and resource management. Each conflict resolution process involved open dialogue, collaboration, and a commitment to finding win-win solutions for all parties involved.
